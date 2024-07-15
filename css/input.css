@@ -33,7 +33,14 @@
   aspect-ratio: 9/16;
   transition: 1s ease;
   background: #fff;
-  /* animation: height; */
+}
+
+.quote{
+  font-family: HBD;
+}
+
+.quote span{
+  color: red;
 }
 
 .birthdayCard_Area.open{
@@ -45,6 +52,9 @@
 }
 
 .tap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: HBD;
   color: white;
   background: rgba(255, 255, 255, 0.35);
@@ -54,6 +64,11 @@
     transform: scale(0.90, 0.90);
     transition: transform 0.2s ease;
   }
+}
+
+.tap p{
+  color: red;
+  display: inline;
 }
 
 

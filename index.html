@@ -8,12 +8,12 @@
 
     <meta property="og:locale" content="en_US" />
     <meta property="og:title" content="HAPPY BIRTHDAY 🎂" />
-    <meta property="og:image" content="#chnage" />
+    <meta property="og:image" content="/media/img/b1.png" />
     <meta property="og:description" content="#chnage" />
     <meta property="og:url" content="#chnage" />
 
     <link href="css/output.css" rel="stylesheet">
-    <link rel="shortcut icon" href="#change" type="image/x-icon">
+    <link rel="shortcut icon" href="/media/img/favicon.png" type="image/x-icon">
 
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
@@ -29,11 +29,11 @@
             <h1 class="text-xl text-center font-semibold"> &lt;Use SmartPhone<img class="h-[25px] w-[25px] inline" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Mobile%20Phone.png" alt="Mobile Phone" /> for better experiences/&gt; </h1>
         </div>
 
-        <p class="tap text-8xl px-8 py-2 rounded-full font-semibold  shadow-sm shadow-black hidden">TAP</p>
+        <div class="tap text-2xl py-2 rounded-full font-semibold  shadow-sm shadow-black"><p>[</p>TAP<p>]</p></div>
         <audio src="media/audio/hbd.mp3" class="hbd_audio hidden" type="audio/mp3"></audio>
-        <div class="birthdayCard_Area fixed w-[80%] rounded-lg flex-col justify-start items-center hidden">
+        <div class="birthdayCard_Area fixed w-[80%] rounded-lg flex-col justify-start items-center hidden d-hidden">
             <dotlottie-player class="dotlottie z-10 w-[70%] h-auto" src="media/confetti/Animation - 1719904275656.json" background="transparent" speed="1" direction="1" playMode="normal" loop autoplay></dotlottie-player>
-            <p class="quote text-md text-center z-10">“Hope your birthday is just like you…totally freaking awesome.”</p>
+            <p class="quote text-md text-center z-10"><span>[</span>They say age is just a number, but in your case, it's a number we can't count to anymore!<br>Happy Birthday, ageless wonder!🎈🎂<span>]</span></p>
             <!-- <img class="z-10 w-[70%] h-auto" src="media/confetti/confetti2.gif" alt="birthday Confetti"> -->
             <img class="hero_img absolute bottom-0 z-0 rounded-lg" src="media/img/b2.jpg" alt="birthday img">
             <img class="confetti absolute h-full z-[12]" src="media/confetti.gif" alt="">
@@ -43,9 +43,9 @@
             </div>
     
         </div>
-        <i class="ri-volume-mute-fill mute_button z-10 text-white cursor-pointer fixed top-0 right-0 text-2xl rounded-full py-2 px-3 m-4"></i>
+        <i class="ri-volume-mute-fill d-hidden mute_button z-10 text-white cursor-pointer fixed top-0 right-0 text-2xl rounded-full py-2 px-3 m-4"></i>
         
-        <div class="cards flex flex-wrap justify-center items-start gap-4 w-full h-full p-2">
+        <div class="cards flex-wrap justify-center items-start gap-4 w-full h-full p-2 hidden d-hidden">
             <div class="info_popup open fixed hidden flex-col items-center overflow-hidden w-[300px] h-[200px] bg-white z-20 rounded-lg">
                 <h1 class="w-full font-medium text-lg bg-sky-500 text-center text-white">Info Box</h1>
                 <i class="ri-close-line absolute top-0 right-0 p-1 bg-white font-semibold text-red-800 text-xl" id="pop_close"></i>
@@ -77,10 +77,11 @@
 
     </section>
 
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script.js"></script>
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-    
+
 </body>
 
 </html>

@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: HBD;
+  src: url("/media/HBD.ttf");
+}
+
+.main-section{
+  background-image: url("/media/img/background.png");
+  background-size: contain;
+  background-position: center;
+  animation: bg-scroll linear infinite 60s;
+}
+
+.switch_device{
+  background: rgba(255, 255, 255, 0.35);
+  /* box-shadow: 0 8px 32px 0 rgba(157, 158, 173, 0.37); */
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  color: white;
+  transition: 0.5s;
+}
+
+.switch_device:hover{
+  background: rgba(255, 255, 255, 0.75);
+  color: red;
+}
+
+.birthdayCard_Area{
+  aspect-ratio: 9/16;
+  transition: 1s ease;
+  background: #fff;
+  /* animation: height; */
+}
+
+.birthdayCard_Area.open{
+  animation: open 0.5s forwards;
+}
+
+.birthdayCard_Area.close{
+  animation: close 0.5s forwards;
+}
+
+.tap{
+  font-family: HBD;
+  color: white;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(10px);
+  transition: 0.5s;
+  &:active{
+    transform: scale(0.90, 0.90);
+    transition: transform 0.2s ease;
+  }
+}
+
+
+.mute_button{
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(14px);
+  transition: 1s;
+}
+
+.card{
+  perspective: 1000px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(14px);
+}
+
+.card-inner{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  box-shadow: 0 30px 20px #5555;
+}
+
+.card:hover .card-inner{
+  transform: rotateY(-180deg);
+}
+
+
+.center_box{
+  background: #fff;
+  box-shadow: 0 30px 20px #5559;
+}
+
+.center_box img{
+  height: 50px;
+  width: 50px;
+}
+
+.card-front, .card-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: linear-gradient(to bottom right, #ff4b2b, #ff416c);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-back{
+  background: linear-gradient(to bottom right, #2b32b2, #416cff);
+  transform: rotateY(180deg);
+}
+
+.bg_img{
+  transform: scale(1.2);
+}
+
+.mute-box{
+  color: blue;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.info_popup{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: Pop_open 0.5s;
+}
+
+
+@keyframes bg-scroll {
+  100%{
+    background-position-y: 4760px;
+    background-position-x: -4760px;
+  }
+}
+
+@keyframes open {
+  0%{
+    transform: scale(0);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  70%{
+    transform: scale(0.95);
+  }
+  95%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+@keyframes Pop_open {
+  0%{
+    transform: scale(0) translate(-50%, -50%);
+  }
+  50%{
+    transform: scale(1.2) translate(-50%, -50%);
+  }
+  70%{
+    transform: scale(0.95) translate(-50%, -50%);
+  }
+  95%{
+    transform: scale(1.1) translate(-50%, -50%);
+  }
+  100%{
+    transform: scale(1) translate(-50%, -50%);
+  }
+}
+
+@keyframes close {
+  100%{
+    transform: scale(0);
+  }
+  95%{
+    transform: scale(1.2);
+  }
+  70%{
+    transform: scale(0.95);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  0%{
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 500px) {
+  .d-hidden{
+    display: none;
+  }
+}
+

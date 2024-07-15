@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBD</title>
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="HAPPY BIRTHDAY 🎂" />
+    <meta property="og:image" content="#chnage" />
+    <meta property="og:description" content="#chnage" />
+    <meta property="og:url" content="#chnage" />
+
+    <link href="css/output.css" rel="stylesheet">
+    <link rel="shortcut icon" href="#change" type="image/x-icon">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+</head>
+
+<body class="">
+    
+    <section class="main-section h-screen w-screen overflow-hidden bg-black flex flex-col items-center justify-center">
+
+        <div class="switch_device d-hidden h-auto w-[500px] py-8 absolute rounded-lg flex flex-col justify-center items-center">
+            <img class="smiley h-[80px] w-[80px] absolute -top-10" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Beaming%20Face%20with%20Smiling%20Eyes.png" alt="Beaming Face with Smiling Eyes" />
+            <h1 class="text-xl text-center font-semibold"> &lt;Use SmartPhone<img class="h-[25px] w-[25px] inline" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Mobile%20Phone.png" alt="Mobile Phone" /> for better experiences/&gt; </h1>
+        </div>
+
+        <p class="tap text-8xl px-8 py-2 rounded-full font-semibold  shadow-sm shadow-black hidden">TAP</p>
+        <audio src="media/audio/hbd.mp3" class="hbd_audio hidden" type="audio/mp3"></audio>
+        <div class="birthdayCard_Area fixed w-[80%] rounded-lg flex-col justify-start items-center hidden">
+            <dotlottie-player class="dotlottie z-10 w-[70%] h-auto" src="media/confetti/Animation - 1719904275656.json" background="transparent" speed="1" direction="1" playMode="normal" loop autoplay></dotlottie-player>
+            <p class="quote text-md text-center z-10">“Hope your birthday is just like you…totally freaking awesome.”</p>
+            <!-- <img class="z-10 w-[70%] h-auto" src="media/confetti/confetti2.gif" alt="birthday Confetti"> -->
+            <img class="hero_img absolute bottom-0 z-0 rounded-lg" src="media/img/b2.jpg" alt="birthday img">
+            <img class="confetti absolute h-full z-[12]" src="media/confetti.gif" alt="">
+            <div class="emojii absolute w-full justify-between -top-8 z-20 flex">
+                <img class="w-[80px] h-[80px]" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Star-Struck.png" alt="Star-Struck"  />
+                <img class="w-[80px] h-[80px]" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" alt="Partying Face" />
+            </div>
+    
+        </div>
+        <i class="ri-volume-mute-fill mute_button z-10 text-white cursor-pointer fixed top-0 right-0 text-2xl rounded-full py-2 px-3 m-4"></i>
+        
+        <div class="cards flex flex-wrap justify-center items-start gap-4 w-full h-full p-2">
+            <div class="info_popup open fixed hidden flex-col items-center overflow-hidden w-[300px] h-[200px] bg-white z-20 rounded-lg">
+                <h1 class="w-full font-medium text-lg bg-sky-500 text-center text-white">Info Box</h1>
+                <i class="ri-close-line absolute top-0 right-0 p-1 bg-white font-semibold text-red-800 text-xl" id="pop_close"></i>
+                <ul class="list-disc list-outside marker:text-sky-400 marker:text-lg text-sm font-medium p-2">
+                    <li>Again, HAPPY BIRTHDAY
+                        <img class="inline w-[25px] mx-1 mb-1" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Heart%20Hands.png" alt="Heart Hands" /> !</li>
+                    <li>Touch cards to flip it !</li>
+                    <li>Click the share button to copy the link <br> of this site.</li>
+                    <li>Click the red cross to close this Popup.</li>
+                </ul>
+            </div>
+            <!-- <div id="one" class="card relative w-[120px] h-[150px] rounded-lg shrink-0" onclick="playAudio(this)">
+                <div class="card-inner">
+                    <div class="card-front relative flex justify-center items-end bg-white" >
+                        <div class="center_box relative w-[70%] h-[55%] mb-6 rounded-md flex justify-center items-center z-10">
+                            <img class="h-[50px] w-[50px]" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Face%20Holding%20Back%20Tears.png" alt="Face Holding Back Tears" />
+                        </div>
+                    </div>
+                    <div class="card-back relative flex justify-center items-end" >
+                        <img class="bg_img h-full w-full absolute object-cover" src="media/img/background.png" alt="">
+                        <div class="center_box relative w-[80%] h-auto mb-2 rounded-md flex flex-col justify-center items-end z-10">
+                            <h1 class="music_name text-sm font-semibold w-full text-left pl-1">This Girll &lt;3</h1>
+                            <audio class="hidden" src="media/audio/This Gurll.mp3" type="audio/mp3"></audio>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    
+</body>
+
+</html>
